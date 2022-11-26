@@ -12,7 +12,7 @@ import './styles/careers.css'
 
 function App() {
   return (
-    <div className="App">
+    <div className="static-example">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={ <Home/> }/>

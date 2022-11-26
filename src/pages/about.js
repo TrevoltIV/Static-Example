@@ -1,4 +1,6 @@
 import React from 'react'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 
 
@@ -6,6 +8,12 @@ import React from 'react'
 
 export default function About() {
     return (
-    <div><h1>Testabout</h1></div>
+        <div className="about-wrapper">
+            <Header/>
+            <div className="about">
+                
+            </div>
+            <Footer/>
+        </div>
     )
 }

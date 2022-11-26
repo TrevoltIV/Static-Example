@@ -1,1 +1,32 @@
-/* ABOUT PAGE STYLESHEET */
+/*
+ABOUT PAGE STYLESHEET
+*/
+
+/* DESKTOP */
+
+.home-wrapper {
+
+}
+
+.home {
+    
+}
+
+.home-main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.home-cta-wrapper {
+    background: #eaeaea;
+    width: 55%;
+    height: 400px;
+    margin-top: 40px;
+    margin-right: 100px;
+
+    border-radius: 6px;
+}
+
+.home-cta {
+
+}
