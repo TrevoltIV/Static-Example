@@ -1,6 +1,8 @@
 /* MAIN STYLESHEET */
 
 
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
 * {
     margin: 0;
 }
@@ -74,9 +76,17 @@
     transform: translateY(8px);
 }
 
+.header-menu-active {
+
+}
+
+.hidden {
+    display: none;
+}
+
 /* Sidebar */
 
-.sidebar-wrapper {
+.reviewbox-wrapper {
     background: #eaeaea;
     width: 25%;
     margin-top: 40px;
@@ -84,21 +94,33 @@
     border-radius: 6px;
 }
 
-.sidebar {
+.reviewbox {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.reviewbox-title {
+    color: grey;
+    margin-top: 10px;
+    margin-left: 8px;
+
+    font-family: 'Secular One';
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 /* Reviews */
 
 .review-wrapper {
     background: #fff;
-    margin-top: 28px;
+    margin-top: 25px;
 
     padding: 15px 60px 15px 60px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 .review {

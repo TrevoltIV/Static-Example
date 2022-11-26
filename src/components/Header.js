@@ -1,10 +1,21 @@
 
 import React from 'react'
+import { useState } from 'react'
 import logo from '../images/logo.png'
 
 // Header component for all pages
 
 export default function Header() {
+
+    const [menuStatus, setMenuStatus] = useState(false)
+
+    const toggleMenu = () => {
+        if (menuStatus) {
+            setMenuStatus(false)
+        } else {
+            setMenuStatus(true)
+        }
+    }
     return (
         <div className="header-wrapper">
             <div className="header">
@@ -14,8 +25,11 @@ export default function Header() {
                     </a>
                 </div>
                 <div className="header-menu-wrapper">
-                <div className="header-menu"></div>
+                <div className="header-menu" onClick={toggleMenu} ></div>
                 </div>
+            </div>
+            <div className={menuStatus ? "hidden" : "header-menu-active"}>
+                <p>Menu</p>
             </div>
         </div>
     )
